@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME PAGE</title>
+    <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        .button {
+            padding:1em;
+            text-align: center;
+            display:inline-block;
+            text-decoration: none !important;
+            margin:0 auto;
+
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .container{
+            width: 100%;
+            text-align: center;
+        }
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1><b><i>Welcome to Kalder's Transfer Services</i></b></h1>
+    <br><br><br><br>
+    <div class="container">
+        <a href="{{url_for('register')}}" class="button blue">Create New user</a>
+    </div>
+    <br>
+    <p align="center"><a href="{{url_for('login')}}" ><button class=grey style="height:75px;width:150px">Login</button></a></p>
+    <p align="center"><a href="{{url_for('transfer')}}" ><button class=grey style="height:75px;width:150px">Transfer Funds</button></a></p>
+    <p align="center"><a href="{{url_for('loans')}}" ><button class=grey style="height:75px;width:150px">Loaning Services</button></a></p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container">
+        <a href="#" class="button blue">Log out</a>
+    </div>
+</body>
+</html>

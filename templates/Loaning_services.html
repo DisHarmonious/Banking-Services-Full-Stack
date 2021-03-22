@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOANING SERVICES</title>
+    <style>
+        h1 {text-align: center;}
+        p {
+            color: navy;
+        }
+
+        body {
+            background-color: mediumaquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Loaning Services </h1>
+    <label>Add Loaning Service</label>
+    <br><br>
+
+    <form action="/add" method="post">
+
+        <label for="cars">Type of Service:</label><br>
+
+        <select name="type" id="cars">
+            <option value="request">Request</option>
+            <option value="provide">Provide</option>
+        </select>
+
+        <br>
+        <label for="amnt">Amount:</label><br>
+        <input type="text" id="amnt" name="amnt"><br>
+        <label for="pbk">Payback timeframe (in months):</label><br>
+        <input type="text" id="pbk" name="pbk"><br>
+        <label for="cd">Communication details:</label><br>
+        <input type="text" id="cd" name="cd"><br>
+        <label for="ac">Additional comments:</label><br>
+        <input type="text" id="ac" name="ac">
+        <br><br>
+        <button type="submit" onclick="alert('Your service has been posted!')">POST</button>
+    </form>
+
+    <h1> Other Available Services</h1>
+    {% for loan in a %}
+        <p> {{loan.type}} || {{loan.amount}} || {{loan.timeframe}} || {{loan.communication}}</p>
+        <a href="/delete">Delete</a>
+        <br><br>
+    {% endfor %}
+
+</body>
+</html>

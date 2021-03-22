@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TRANSFER FUNDS</title>
+    <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        body {
+            background-color: green;
+        }
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>TRANSFER FUNDS</h1>
+    <br>
+    <form action="/make_transacion" method="post">
+        <label for="fname"><b>Username:</b></label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <br>
+        <label for="lname"><b>Password:</b></label><br>
+        <input type="password" id="lname" name="lname" required>
+        <br><br>
+        <label for="amnt"><b>Amount:</b></label><br>
+        <input type="integer" id="amnt" name="amnt" required>
+        <br><br>
+        <label for="Receivernm"><b>Receiver Name</b></label><br>
+        <input type="text" id="Receivernm" name="Receivernm" required>
+        <br><br>
+        <label for="Receiverid"><b>Receiver ID</b></label><br>
+        <input type="text" id="Receiverid" name="Receiverid" required>
+        <br><br>
+        <button onclick="alert('Transfer Complete!')" style=" background-color: #97f7cc; color: #0db46a; font-size: 32px; font-family: monspace;">
+            Wire Transfer
+        </button>
+    </form>
+
+</body>
+</html>
