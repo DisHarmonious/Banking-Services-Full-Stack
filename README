@@ -10,7 +10,7 @@ an incoming client can
 
 
 Back end:
-- users and transactions are sent to a postgreSQL db
+- users and transactions are linked with a postgreSQL db
 - loaning services are stored in a SQLite db 
 - admins can request user info to detect suspicious behaviors
 - url-based REST(like) api, providing the latest N transactions
