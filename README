@@ -1,0 +1,19 @@
+This is a project around a web page that provides banking services. 
+
+Front end:
+an incoming client can
+- register, login, and see his information
+- transfer funds to other users
+- partake in loaning services (by browing and posting). 
+
+(*loaning services is a term referring to a special service, where a user can either request or provide funding, to or from, other users)
+
+
+Back end:
+- users and transactions are sent to a postgreSQL db
+- loaning services are stored in a SQLite db 
+- admins can request user info to detect suspicious behaviors
+- url-based REST(like) api, providing the latest N transactions
+
+
+Needs some adjustments but for the most part is functional
